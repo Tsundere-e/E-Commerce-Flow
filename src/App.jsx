@@ -147,8 +147,7 @@ const App = () => {
 const ProductCard = ({ product, onAdd, onWish, isWished, device }) => (
   <div className="group relative animate-in slide-in-from-bottom-4 duration-500">
     <div className={`aspect-[4/5] bg-[#fdfafb] rounded-[2rem] overflow-hidden relative mb-4 border border-pink-50/50`}>
-      <div className="absolute inset-0 flex items-center justify-center text-pink-100 font-black text-[10px] tracking-[0.4em] italic opacity-50">#</div>
-      <div className="absolute top-3 left-3">
+      <img src={product.img} alt={product.name} className="absolute inset-0 w-full h-full object-cover" />      <div className="absolute top-3 left-3">
         <span className="bg-white/80 backdrop-blur-md px-2 py-0.5 rounded-full text-[6px] font-black uppercase tracking-widest text-[#FF85A2] shadow-sm">{product.tag}</span>
       </div>
       <button onClick={() => onWish(product)} className="absolute top-3 right-3 p-1.5 bg-white/90 rounded-full shadow-lg hover:scale-110 transition-transform">
