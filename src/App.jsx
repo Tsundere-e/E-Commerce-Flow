@@ -6,7 +6,7 @@ import {
 } from 'lucide-react';
 
 const MOCK_PRODUCTS = [
-  { id: 1, name: "Melody Plush", price: 54.99, rating: 5, reviews: 12, img: "https://i.pinimg.com/originals/bb/63/0f/bb630f40d10b749d978a579624e54854.jpg", tag: "Limited", category: "Plushies" },
+  { id: 1, name: "Melody Plush", price: 54.99, rating: 5, reviews: 12, img: "https://i.pinimg.com/originals/bb/63/0f/bb630f40d10b7b140cc39f972b9a765d.jpg", tag: "Limited", category: "Plushies" },
   { id: 2, name: "Sweet Bow Pink Sweater", price: 65.50, rating: 4, reviews: 85, img: "https://i.pinimg.com/1200x/33/24/a5/3324a56955b06133abe5d09da8567e8d.jpg", tag: "Popular", category: "Tech" },
   { id: 3, name: "White Ruffle Cake Skirt", price: 89.00, rating: 5, reviews: 210, img: "https://i.pinimg.com/736x/12/88/d5/1288d594dec63d4c73c74967b6dbce59.jpg", tag: "Luxury", category: "Tech" },
   { id: 4, name: "Pink Cute Rose Lamp", price: 49.99, rating: 4, reviews: 45, img: "https://i.pinimg.com/1200x/bc/7f/30/bc7f30a6a2f125fa24b186c1e2e04ccf.jpg", tag: "Essential", category: "Desk" },
@@ -222,7 +222,6 @@ const CheckoutView = ({ subtotal, onComplete, onBack, device }) => {
         <input placeholder="Shipping Address" className="w-full bg-slate-50 border-none rounded-xl p-4 text-[10px] font-bold outline-pink-200" onChange={e => setFormData({...formData, address: e.target.value})} />
         <input placeholder="Email for Tracking" className="w-full bg-slate-50 border-none rounded-xl p-4 text-[10px] font-bold outline-pink-200" onChange={e => setFormData({...formData, email: e.target.value})} />
       </div>
-
       <div className="bg-[#fdfafb] p-6 rounded-[2rem] border border-pink-50 mb-8">
         <div className="flex justify-between mb-2 opacity-50 text-[8px] font-black uppercase tracking-widest">
           <span>Suite Total</span>
