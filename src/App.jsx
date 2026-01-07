@@ -6,12 +6,12 @@ import {
 } from 'lucide-react';
 
 const MOCK_PRODUCTS = [
-  { id: 1, name: "Premium Silk Melody Plush", price: 124.99, rating: 5, reviews: 12, img: "#", tag: "Limited", category: "Plushies" },
-  { id: 2, name: "Lace Tech Sleeve Pro", price: 55.50, rating: 4, reviews: 85, img: "#", tag: "Popular", category: "Tech" },
-  { id: 3, name: "Berry Mechanical Suite", price: 289.00, rating: 5, reviews: 210, img: "#", tag: "Luxury", category: "Tech" },
-  { id: 4, name: "Rose Water Deskscape", price: 49.99, rating: 4, reviews: 45, img: "#", tag: "Essential", category: "Desk" },
-  { id: 5, name: "Handcrafted Ceramic Mug", price: 35.00, rating: 5, reviews: 302, img: "#", tag: "New", category: "Desk" },
-  { id: 6, name: "Satin Coquette Set", price: 22.50, rating: 4, reviews: 94, img: "#", tag: "Sweet", category: "Jewels" }
+  { id: 1, name: "Melody Plush", price: 54.99, rating: 5, reviews: 12, img: "https://i.pinimg.com/originals/bb/63/0f/bb630f40d10b749d978a579624e54854.jpg", tag: "Limited", category: "Plushies" },
+  { id: 2, name: "Sweet Bow Pink Sweater", price: 65.50, rating: 4, reviews: 85, img: "https://i.pinimg.com/1200x/33/24/a5/3324a56955b06133abe5d09da8567e8d.jpg", tag: "Popular", category: "Tech" },
+  { id: 3, name: "White Ruffle Cake Skirt", price: 89.00, rating: 5, reviews: 210, img: "https://i.pinimg.com/736x/12/88/d5/1288d594dec63d4c73c74967b6dbce59.jpg", tag: "Luxury", category: "Tech" },
+  { id: 4, name: "Pink Cute Rose Lamp", price: 49.99, rating: 4, reviews: 45, img: "https://i.pinimg.com/1200x/bc/7f/30/bc7f30a6a2f125fa24b186c1e2e04ccf.jpg", tag: "Essential", category: "Desk" },
+  { id: 5, name: "Handcrafted Ceramic Mug", price: 35.00, rating: 5, reviews: 302, img: "https://i.pinimg.com/736x/8c/57/91/8c5791024c21919dae929beff390e5f6.jpg", tag: "New", category: "Desk" },
+  { id: 6, name: "Earring Coquette Set", price: 22.50, rating: 4, reviews: 94, img: "https://i.pinimg.com/736x/5c/62/ab/5c62ab336ee7306a8ff3ad6e550a77a3.jpg", tag: "Sweet", category: "Jewels" }
 ];
 
 const App = () => {
