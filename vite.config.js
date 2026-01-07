@@ -7,9 +7,10 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  resolve: {
-    alias: {
-      'lucide-react': 'lucide-react'
-    }
+  optimizeDeps: {
+    include: ['lucide-react']
+  },
+  ssr: {
+    noExternal: ['lucide-react']
   }
 })
