@@ -183,7 +183,7 @@ const CartView = ({ cart, updateQty, onProceed, onBack, device }) => (
       <div className="space-y-6">
         {cart.map(item => (
           <div key={item.id} className="flex gap-4 pb-6 border-b border-pink-50">
-            <div className="w-16 h-16 bg-pink-50 rounded-2xl flex items-center justify-center text-[8px] font-black text-pink-200">#</div>
+            <img src={item.img} className="w-16 h-16 rounded-2xl object-cover" />
             <div className="flex-1 flex flex-col justify-center">
               <h4 className="font-black text-[10px] mb-1 uppercase tracking-tight leading-tight">{item.name}</h4>
               <p className="text-[#FF85A2] font-black text-[10px]">${item.price.toFixed(2)}</p>
