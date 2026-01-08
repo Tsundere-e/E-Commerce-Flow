@@ -65,12 +65,12 @@ const App = () => {
   const cartSubtotal = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
 
   return (
-    <div className="min-h-screen bg-[#faf7f8] flex flex-col items-center justify-center p-4 md:p-6 font-sans text-[#4a3a3d]">
+    <div className="min-h-screen bg-[#FDE2E8] flex flex-col items-center justify-center p-4 md:p-6 font-sans text-[#4a3a3d]">
       <div className="flex bg-white/80 backdrop-blur-md rounded-2xl p-1.5 shadow-xl border border-white mb-6 md:mb-10 z-50">
-        <button onClick={() => setDevice('mobile')} className={`flex items-center gap-2 px-4 md:px-6 py-2 md:py-2.5 rounded-xl transition-all duration-300 ${device === 'mobile' ? 'bg-[#FF85A2] text-white shadow-lg shadow-pink-200' : 'text-[#FF85A2] hover:bg-pink-50'}`}>
+        <button onClick={() => setDevice('mobile')} className={`flex items-center gap-2 px-4 md:px-6 py-2 md:py-2.5 rounded-xl transition-all duration-300 ${device === 'mobile' ? 'bg-[#FFF5F7] text-white shadow-lg shadow-pink-200' : 'text-[#FF85A2] hover:bg-pink-50'}`}>
           <Smartphone size={16} /> <span className="font-bold text-[10px] uppercase tracking-widest">Mobile</span>
         </button>
-        <button onClick={() => setDevice('notebook')} className={`flex items-center gap-2 px-4 md:px-6 py-2 md:py-2.5 rounded-xl transition-all duration-300 ${device === 'notebook' ? 'bg-[#FF85A2] text-white shadow-lg shadow-pink-200' : 'text-[#FF85A2] hover:bg-pink-50'}`}>
+        <button onClick={() => setDevice('notebook')} className={`flex items-center gap-2 px-4 md:px-6 py-2 md:py-2.5 rounded-xl transition-all duration-300 ${device === 'notebook' ? 'bg-[#FFF5F7] text-white shadow-lg shadow-pink-200' : 'text-[#FF85A2] hover:bg-pink-50'}`}>
           <Laptop size={16} /> <span className="font-bold text-[10px] uppercase tracking-widest">Desktop</span>
         </button>
       </div>
